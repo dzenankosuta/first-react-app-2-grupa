@@ -1,17 +1,22 @@
 import { useState } from "react";
 import "./Login.css";
 import axios from "axios";
+import { BASE_URL } from "../../config/api";
+import { useNavigate } from "react-router-dom";
+
 export function Login() {
+  const navigation = useNavigate();
   async function loginUser(data) {
     try {
-      const user = await axios.post(
-        "https://nit-backend.onrender.com/users/login",
-        data
-      );
+      const user = await axios.post(`${BASE_URL}/users/login`, data);
       const userInfo = await user.data;
       console.log(userInfo);
+      // console.log(userInfo.token);
+      localStorage.setItem("token", userInfo.token);
+      navigation("/");
     } catch (err) {
       console.log(err.response.data.err);
+      localStorage.removeItem("token");
     }
   }
 
@@ -48,8 +53,8 @@ export function Login() {
         <label className="label">Password</label>
         <input
           className="input"
-          type="password "
-          name="password "
+          type="password"
+          name="password"
           placeholder="Password"
           value={password}
           onChange={(e) => {
