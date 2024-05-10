@@ -13,14 +13,14 @@ import { AppContext } from "./context/AppContext";
 import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute";
 import Footer from "./components/Footer/Footer";
 
-const poruke = [
-  "Danas je subota",
-  "U subotu je lepo vreme",
-  "Subota je dan za odmor",
-  "Subota je dan za kupovinu",
-  "Subota je dan za druzenje",
-  "Subota je dan za kafu",
-];
+// const poruke = [
+//   "Danas je subota",
+//   "U subotu je lepo vreme",
+//   "Subota je dan za odmor",
+//   "Subota je dan za kupovinu",
+//   "Subota je dan za druzenje",
+//   "Subota je dan za kafu",
+// ];
 
 export const BASE_URL = "https://api.quotable.io";
 
