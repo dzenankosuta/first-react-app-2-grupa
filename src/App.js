@@ -22,7 +22,7 @@ import Footer from "./components/Footer/Footer";
 //   "Subota je dan za kafu",
 // ];
 
-// export const BASE_URL = "https://api.quotable.io";
+export const BASE_URL = "https://api.quotable.io";
 
 function App() {
   // const [count, setCount] = React.useState(0);
