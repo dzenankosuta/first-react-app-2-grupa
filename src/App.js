@@ -29,12 +29,14 @@ function App() {
   const [count, setCount] = useState(0);
   // const [arr, setArr] = useState(poruke);
   // setCount je metoda pomocu koje menjamo vrednost count state_a:
-  const increaseCount = () => {
-    setCount(count + 1);
-  };
-  const decreaseCount = () => {
-    setCount(count - 1);
-  };
+
+  // const increaseCount = () => {
+  //   setCount(count + 1);
+  // };
+  // const decreaseCount = () => {
+  //   setCount(count - 1);
+  // };
+
   // const x = 10;
 
   // const reverseArr = () => {
